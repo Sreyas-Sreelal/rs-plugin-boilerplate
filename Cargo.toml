@@ -1,0 +1,11 @@
+[package]
+name = "rs-plugin-boilerplate"
+version = "0.1.0"
+authors = ["Sreyas <sreyassreelal@gmail.com>"]
+
+[lib]
+name = "plugin_name_here"
+crate-type = ["dylib"]
+
+[dependencies]
+samp-sdk = "0.8.1"
