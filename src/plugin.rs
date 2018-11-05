@@ -23,7 +23,7 @@ impl MyPlugin {
 	pub fn amx_load(&mut self, amx: &mut AMX) -> Cell {
 		let natives = natives!{
 			/*
-			"YourNativeFunctionName" => FunctionName,
+			"YourNativeFunctionName" => foo,
 			*/
 		};
 
