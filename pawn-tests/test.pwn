@@ -8,5 +8,5 @@
 main() { }
 
 Test:RunTest() {
-    ASSERT(YourNativeFunctionName() == 1);
+	ASSERT(YourNativeFunctionName() == 1);
 }
