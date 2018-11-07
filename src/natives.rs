@@ -1,5 +1,5 @@
-use samp_sdk::types::Cell;
-use samp_sdk::amx::{AmxResult, AMX};
+//use samp_sdk::types::Cell;
+//use samp_sdk::amx::{AmxResult, AMX};
 
 pub trait Natives {
 	/*
