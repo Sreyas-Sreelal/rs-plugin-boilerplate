@@ -3,7 +3,7 @@
 #include <a_samp>
 #include <YSI\y_testing>
 
-#include "../include/include.inc"
+#include "../include/MyInclude.inc"
 
 main() { }
 
