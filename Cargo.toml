@@ -1,10 +1,10 @@
 [package]
-name = "MyPlugin"
+name = "{{project-name}}"
 version = "0.1.0"
-authors = ["Author <AuthorMail>"]
+authors = ["{{authors}}"]
 
 [lib]
-name = "MyPlugin"
+name = "{{project-name}}"
 crate-type = ["dylib"]
 
 [dependencies]
