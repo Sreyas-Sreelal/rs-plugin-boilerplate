@@ -3,7 +3,7 @@
 #include <a_samp>
 #include <YSI\y_testing>
 
-#include "../include/MyInclude.inc"
+#include "../include/{{crate_name}}.inc"
 
 main() { }
 

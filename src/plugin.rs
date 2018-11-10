@@ -8,9 +8,9 @@ export native functions
 define_native!(foo);
 */
 
-pub struct MyPlugin;
+pub struct {{crate_name}};
 
-impl MyPlugin {
+impl {{crate_name}} {
 	pub fn load(&self) -> bool {
 		log!("Plugin Loaded!");
 		return true;
@@ -41,9 +41,9 @@ impl MyPlugin {
 
 }
 
-impl Default for MyPlugin {
+impl Default for {{crate_name}} {
 	fn default() -> Self {
-		MyPlugin {
+		{{crate_name}} {
 		}
 	}
 }

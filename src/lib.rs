@@ -5,7 +5,7 @@ extern crate samp_sdk;
 mod plugin;
 mod natives;
 
-use plugin::MyPlugin;
+use plugin::{{crate_name}};
 
-new_plugin!(MyPlugin);
+new_plugin!({{crate_name}});
 

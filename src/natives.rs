@@ -8,7 +8,7 @@ pub trait Natives {
 	*/
 }
 
-impl Natives for super::MyPlugin{
+impl Natives for super::{{crate_name}}{
 	/*
 		Define native functions here
 		fn foo(&mut self,_:&AMX) -> AmxResult<Cell> {

@@ -1,12 +1,12 @@
 // NOTE:change the name of include to project name
 // remove built-in include guard
-#if defined _inc_MyInclude
-	#undef _inc_MyInclude
+#if defined _inc_{{crate_name}}
+	#undef _inc_{{crate_name}}
 #endif
 // custom include-guard
-#if defined _MyInclude_included
+#if defined _{{crate_name}}_included
 	#endinput
 #endif
-#define _MyInclude_included
+#define _{{crate_name}}_included
 
 native YourNativeFunctionName();
