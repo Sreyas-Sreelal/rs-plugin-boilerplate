@@ -17,6 +17,7 @@ Boilerplate for developing SA-MP plugins in Rust
 
 * Rename the directory and project configuration in **Cargo.toml**
 
+## Setup compiler
 * Download [rustup](https://win.rustup.rs)
 * Install nightly compiler 
 	
