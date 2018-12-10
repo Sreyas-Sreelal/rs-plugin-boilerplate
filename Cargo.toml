@@ -8,4 +8,4 @@ name = "{{project-name}}"
 crate-type = ["dylib"]
 
 [dependencies]
-samp-sdk = "0.8.1"
+samp-sdk = "0.8.4"
