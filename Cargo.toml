@@ -4,7 +4,7 @@ version = "0.1.0"
 authors = ["{{authors}}"]
 
 [lib]
-name = "{{project-name}}"
+name = "{{crate_name}}"
 crate-type = ["dylib"]
 
 [dependencies]
