@@ -6,7 +6,7 @@ Boilerplate for developing SA-MP plugins in Rust
 ### Using cargo generate
 * Install cargo generate (requires git,open-ssl)
 
-	`cargo install cargo generate`
+	`cargo install cargo-generate`
 * Setup project using cargo generate
 
 	`cargo generate --git https://github.com/Sreyas-Sreelal/rs-plugin-boilerplate.git`
