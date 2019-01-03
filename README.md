@@ -9,7 +9,7 @@ Boilerplate for developing SA-MP plugins in Rust
 	`cargo install cargo generate`
 * Setup project using cargo generate
 
-	`cargo generate --git https://github.com/Sreyas-Sreelal/rs-plugin-boilerplate.git --name YourProjectName`
+	`cargo generate --git https://github.com/Sreyas-Sreelal/rs-plugin-boilerplate.git`
 ### Alternate method
 * Clone this repo
 
