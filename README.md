@@ -27,16 +27,14 @@ Boilerplate for developing SA-MP plugins in Rust
 	* **Linux**
 
 		`rustup install nightly-i686-unknown-linux-gnu`
+
 ## Building
-* **Windows**
-	
-	`cargo +nightly-i686-pc-windows-msvc build --release`
-* **Linux**
-	
-	`cargo +nightly-i686-unknown-linux-gnu build --release`
+1. `make setup` to setup testing server
+2. `make release` build the plugin 
+3. `make run` run the pawn tests 
 
 ## Notes
 * Rust requires  [Microsoft Visual C++ Build Tools 2017](https://www.visualstudio.com/downloads/#build-tools-for-visual-studio-2017) to build in Windows
 
-* Install `libgcc_32` libs for linux   
+* Install `libgcc_32` libs for linux
 
