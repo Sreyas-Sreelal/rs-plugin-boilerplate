@@ -1,0 +1,21 @@
+{
+    "package": {
+      "name": "builds",
+      "repo": "{{project-name}}",
+      "subject": "{{authors}}"
+    },
+    "version": {
+      "name": "latest"
+    },
+    "files": [
+      {
+        "includePattern": "test/plugins/{{crate_name}}.so",
+        "uploadPattern": "{{crate_name}}.so",
+        "matrixParams": {
+          "override": 1
+        }
+      }
+    ],
+    "publish": true
+  }
+  
