@@ -2,11 +2,7 @@ use samp_sdk::consts::*;
 use samp_sdk::types::Cell;
 use samp_sdk::amx::AMX;
 
-/*
-export native functions
-
 define_native!(foo);
-*/
 
 pub struct {{crate_name}};
 
@@ -22,9 +18,7 @@ impl {{crate_name}} {
 
 	pub fn amx_load(&mut self, amx: &mut AMX) -> Cell {
 		let natives = natives!{
-			/*
-			"YourNativeFunctionName" => foo,
-			*/
+			"Foo" => foo,
 		};
 
 		match amx.register(&natives) {

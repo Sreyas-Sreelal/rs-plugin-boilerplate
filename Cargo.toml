@@ -5,8 +5,7 @@ authors = ["{{authors}}"]
 
 [lib]
 name = "{{crate_name}}"
-crate-type = ["dylib"]
+crate-type = ["cdylib"]
 
 [dependencies]
 samp-sdk = {git = "https://github.com/ZOTTCE/samp-sdk"}
-

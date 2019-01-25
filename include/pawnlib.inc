@@ -1,4 +1,4 @@
-// NOTE:change the name of include to project name
+// NOTE:change the name of include to {{crate_name}}
 // remove built-in include guard
 #if defined _inc_{{crate_name}}
 	#undef _inc_{{crate_name}}
@@ -9,4 +9,4 @@
 #endif
 #define _{{crate_name}}_included
 
-native YourNativeFunctionName();
+native Foo();
