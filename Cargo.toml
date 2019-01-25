@@ -8,4 +8,5 @@ name = "{{crate_name}}"
 crate-type = ["dylib"]
 
 [dependencies]
-samp-sdk = "0.8.4"
+samp-sdk = {git = "https://github.com/ZOTTCE/samp-sdk"}
+

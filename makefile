@@ -1,12 +1,12 @@
 ifdef OS
-	TOOLCHAIN = +nightly-i686-pc-windows-msvc
+	TOOLCHAIN = +stable-i686-pc-windows-msvc
 	BINARYNAME = {{crate_name}}.dll
 	OUPUTNAME = {{crate_name}}.dll
 	CP_RELEASE = cp .\target\release\$(BINARYNAME) .\test\plugins\$(OUPUTNAME)
 	CP_DEBUG = cp .\target\debug\$(BINARYNAME) .\test\plugins\$(OUPUTNAME)
 else
 	ifeq ($(shell uname), Linux)
-		TOOLCHAIN = +nightly-i686-unknown-linux-gnu
+		TOOLCHAIN = +stable-i686-unknown-linux-gnu
 		BINARYNAME = lib{{crate_name}}.so
 		OUPUTNAME = {{crate_name}}.so
 		CP_RELEASE = cp target/release/$(BINARYNAME) test/plugins/$(OUPUTNAME)
