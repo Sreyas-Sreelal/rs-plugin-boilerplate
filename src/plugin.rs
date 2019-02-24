@@ -1,6 +1,7 @@
 use samp_sdk::consts::*;
 use samp_sdk::types::Cell;
 use samp_sdk::amx::AMX;
+use samp_sdk::{log,define_native,natives};
 
 define_native!(foo);
 
@@ -18,7 +19,7 @@ impl {{crate_name}} {
 
 	pub fn amx_load(&mut self, amx: &mut AMX) -> Cell {
 		let natives = natives!{
-			"Foo" => foo,
+			"Foo" => foo
 		};
 
 		match amx.register(&natives) {
