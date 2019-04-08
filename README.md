@@ -19,14 +19,9 @@ Boilerplate for developing SA-MP plugins in Rust
 
 ### Setup compiler
 * Download [rustup](https://win.rustup.rs)
-* Install nightly compiler 
-	
-	* **Windows**
+* Install stable compiler 
 
-		`rustup install nightly-i686-pc-windows-msvc`
-	* **Linux**
-
-		`rustup install nightly-i686-unknown-linux-gnu`
+	`rustup install stable-i686`
 
 ## Building
 1. `make setup` to setup testing server
