@@ -1,8 +1,10 @@
-use samp_sdk::types::Cell;
-use samp_sdk::amx::{AmxResult, AMX};
+use samp::prelude::*;
+use samp::native;
+use samp::error::AmxResult;
 
-impl super::{{crate_name}}{
-	pub fn foo(&mut self,_:&AMX) -> AmxResult<Cell> {
-		Ok(1)
-	}
+impl super::{{crate_name}} {
+    #[native(name = "foo")]
+    pub fn foo(&mut self,amx: &Amx) -> AmxResult<bool> {
+        Ok(true)
+    }
 }
