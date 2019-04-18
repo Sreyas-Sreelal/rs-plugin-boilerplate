@@ -1,4 +1,3 @@
-
 use log::info;
 use samp::plugin::SampPlugin;
 
