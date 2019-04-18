@@ -5,6 +5,7 @@
 	"output": "gamemodes/test.amx",
 	"dependencies": ["sampctl/pawn-stdlib"],
 	"dev_dependencies": ["pawn-lang/YSI-Includes"],
+	"local":true,
 	"include_path": "include",
 	"builds": [
 		{
