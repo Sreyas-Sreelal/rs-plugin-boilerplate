@@ -4,7 +4,7 @@
 	"entry": "pawn-tests/test.pwn",
 	"output": "gamemodes/test.amx",
 	"dependencies": ["sampctl/pawn-stdlib"],
-	"dev_dependencies": ["pawn-lang/YSI-Includes"],
+	"dev_dependencies": ["pawn-lang/YSI-Includes@5.x"],
 	"local":true,
 	"include_path": "include",
 	"builds": [
@@ -24,16 +24,14 @@
 	},
 	"resources": [
 		{
-			"name": "{{project-name}}-linux-x86.zip",
+			"name": "{{project-name}}.so",
 			"platform": "linux",
-			"archive": true,
-			"plugins": ["plugins/{{project-name}}.so"]
+			"archive": false
 		},
 		{
-			"name": "{{project-name}}-windows-x86.zip",
+			"name": "{{project-name}}.dll",
 			"platform": "windows",
-			"archive": true,
-			"plugins": ["plugins/{{project-name}}.dll"]
+			"archive": false
 		}
 	]
 }
