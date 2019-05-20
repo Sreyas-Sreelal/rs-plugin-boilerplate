@@ -28,10 +28,10 @@ setup:
 
 ensure:
 	sampctl package ensure
-	
+
 run:
 	sampctl package build
 	sampctl package run
-	
+
 clean:
 	cargo clean

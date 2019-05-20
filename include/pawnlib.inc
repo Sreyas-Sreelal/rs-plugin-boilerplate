@@ -1,12 +1,11 @@
-// NOTE:change the name of include from pawnlib.inc to {{crate_name}}.inc
 // remove built-in include guard
-#if defined _inc_{{crate_name}}
-	#undef _inc_{{crate_name}}
+#if defined _inc_pawnlib
+	#undef _inc_pawnlib
 #endif
 // custom include-guard
-#if defined _{{crate_name}}_included
+#if defined _pawnlib_included
 	#endinput
 #endif
-#define _{{crate_name}}_included
+#define _pawnlib_included
 
 native Foo();

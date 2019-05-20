@@ -1,15 +1,15 @@
 use log::info;
 use samp::plugin::SampPlugin;
 
-#[allow(non_camel_case_types)]
-pub struct {{crate_name}};
 
-impl SampPlugin for {{crate_name}} {
+pub struct Plugin;
+
+impl SampPlugin for Plugin {
     fn on_load(&mut self) {
-        info!("Loaded!");
+        info!("{{crate_name}} Loaded!");
     }
 
-    fn on_unload(self: Box<{{crate_name}}>) {
-        info!("Unloaded!");
+    fn on_unload(self: Box<Plugin>) {
+        info!("{{crate_name}} Unloaded!");
     }
 }
