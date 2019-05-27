@@ -1,7 +1,6 @@
 use log::info;
 use samp::plugin::SampPlugin;
 
-
 pub struct Plugin;
 
 impl SampPlugin for Plugin {
