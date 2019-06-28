@@ -1,7 +1,7 @@
 mod natives;
 mod plugin;
 
-use crate::plugin::{{crate_name}};
+use crate::plugin::{{crate_name | pascal_case}};
 use samp::initialize_plugin;
 
 initialize_plugin!(
@@ -13,7 +13,7 @@ initialize_plugin!(
         let samp_logger = samp::plugin::logger()
             .level(log::LevelFilter::Info);
 
-        let log_file = fern::log_file("{{crate_name}}.log").expect("Cannot create log file!");
+        let log_file = fern::log_file("{{crate_name | pascal_case}}.log").expect("Cannot create log file!");
 
         let trace_level = fern::Dispatch::new()
             .level(log::LevelFilter::Trace)
@@ -21,7 +21,7 @@ initialize_plugin!(
 
         let _ = fern::Dispatch::new()
             .format(|callback, message, record| {
-                callback.finish(format_args!("[{{crate_name}}] [{}]: {}", record.level().to_string().to_lowercase(), message))
+                callback.finish(format_args!("[{{crate_name | pascal_case}}] [{}]: {}", record.level().to_string().to_lowercase(), message))
             })
             .chain(samp_logger)
             .chain(trace_level)

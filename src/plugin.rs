@@ -8,7 +8,7 @@ impl SampPlugin for {{crate_name| pascal_case}} {
         info!("{{crate_name}} Loaded!");
     }
 
-    fn on_unload(self: Box<Plugin>) {
+    fn on_unload(self: Box<{{crate_name | pascal_case}}>) {
         info!("{{crate_name}} Unloaded!");
     }
 }
