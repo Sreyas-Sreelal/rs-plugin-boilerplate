@@ -9,7 +9,7 @@
     },
     "files": [
       {
-        "includePattern": "test/plugins/{{crate_name}}.so",
+        "includePattern": "plugins/{{crate_name}}.so",
         "uploadPattern": "{{crate_name}}.so",
         "matrixParams": {
           "override": 1
