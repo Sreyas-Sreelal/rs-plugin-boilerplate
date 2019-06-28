@@ -31,10 +31,10 @@ artifacts:
 
 deploy:
   - provider: BinTray
-    username: {{authors}}
+    username: {{username}}
     api_key:
       secure: avSVuY8Q8nSYesj3ce2v8cM6+aTSivkTzGozcCBMpJr+I0Td73+fVHTp6dAHcGw6
-    subject: {{authors}}
+    subject: {{username}}
     repo: {{project-name}}
     package: builds
     publish: true

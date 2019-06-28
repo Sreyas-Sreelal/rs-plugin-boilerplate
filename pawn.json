@@ -1,5 +1,5 @@
 {
-	"user": "{{authors}}",
+	"user": "{{username}}",
 	"repo": "{{project-name}}",
 	"entry": "pawn-tests/test.pwn",
 	"output": "gamemodes/test.amx",
