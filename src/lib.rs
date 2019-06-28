@@ -1,7 +1,7 @@
 mod natives;
 mod plugin;
 
-use crate::plugin::{{{crate_name}}};
+use crate::plugin::{{crate_name}};
 use samp::initialize_plugin;
 
 initialize_plugin!(
