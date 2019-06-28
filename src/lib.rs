@@ -1,12 +1,12 @@
 mod natives;
 mod plugin;
 
-use crate::plugin::Plugin;
+use crate::plugin::{{{crate_name}}};
 use samp::initialize_plugin;
 
 initialize_plugin!(
     natives: [
-        Plugin::foo
+        {{crate_name | pascal_case}}::foo
     ],
     {
         samp::plugin::enable_process_tick();
@@ -27,7 +27,7 @@ initialize_plugin!(
             .chain(trace_level)
             .apply();
 
-        Plugin {
+        {{crate_name | pascal_case}} {
         }
     }
 );
