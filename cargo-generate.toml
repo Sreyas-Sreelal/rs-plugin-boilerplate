@@ -1,2 +1,0 @@
-[template]
-include = [".github/workflows/rust.yml"]
