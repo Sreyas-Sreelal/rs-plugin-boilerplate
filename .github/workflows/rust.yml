@@ -11,10 +11,10 @@ env:
   RELEASE_BIN: {{crate_name}}
   RELEASE_ADDS: README.md LICENSE
 
+{% raw -%}
 jobs:
   build:
     name: Build release
-
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -60,5 +60,5 @@ jobs:
       with:
         name: ${{ runner.os }}
         path: artifacts/
-        
+{%- endraw %}        
         
